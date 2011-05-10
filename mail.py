@@ -21,7 +21,7 @@ while True:
   time.sleep(4)
   output = ser.readline()
   if output == '1':
-    timestamp = strftime("%Y-%m-%d %H:%M:%S") + '\n'
+    timestamp = mail.strftime("%Y-%m-%d %H:%M:%S") + '\n'
     f = open(log, 'a')
     f.write(timestamp)
     f.close()
